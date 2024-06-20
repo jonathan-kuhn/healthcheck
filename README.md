@@ -2,6 +2,13 @@
 
 A python script that checks if your websites are running fine and are reachable.
 
+It uses the [Textbelt](https://textbelt.com) API to send reports to your phone via sms.
+
+You can put your API key in the ```settings.py``` file or use the default key ```textbelt``` to send one free SMS per day. 
+
+**Note**: Free SMS sending with textbelt is not available in every country.
+
+
 ## Setup
 
 1. Clone the repository:
@@ -21,6 +28,7 @@ A python script that checks if your websites are running fine and are reachable.
    ```
 
 4. Open `settings.py` and add your API key, phone number, and the list of domains you want to check.
+   
 
 ## Usage
 
@@ -28,3 +36,5 @@ Run the script:
 ```sh
 python3 healthcheck.py
 ```
+
+
