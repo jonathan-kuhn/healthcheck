@@ -1,6 +1,6 @@
 # healthcheck
 
-This script checks if a list of domains are up and running.
+A python script that checks if your websites are running fine and are reachable.
 
 ## Setup
 
