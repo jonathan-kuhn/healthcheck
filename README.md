@@ -1,4 +1,6 @@
-# healthcheck
+[![CodeQL](https://github.com/samuel-kuhn/healthcheck/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/samuel-kuhn/healthcheck/actions/workflows/github-code-scanning/codeql)
+
+# Healthcheck
 
 A python script that checks if your websites are running fine and are reachable.
 
