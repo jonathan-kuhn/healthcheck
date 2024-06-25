@@ -26,8 +26,9 @@ You can put your API key in the ```settings.py``` file or use the default key ``
 
 3. Create your own `settings.py` file by copying `settings.py.example`:
    ```sh
-   cp settings.py.example settings.py
+   copy settings.py.example settings.py
    ```
+   **Note**: For lnux it is cp instead of copy
 
 4. Open `settings.py` and add your API key, phone number, and the list of domains you want to check.
    
