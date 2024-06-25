@@ -8,7 +8,7 @@ It uses the [Textbelt](https://textbelt.com) API to send reports to your phone v
 
 You can put your API key in the ```settings.py``` file or use the default key ```textbelt``` to send one free SMS per day. 
 
-**Note**: Free SMS sending with textbelt is not available in every country.
+**Note**: Free SMS sending with textbelt is not available in every country. See https://docs.textbelt.com/supported-countries
 
 
 ## Setup
