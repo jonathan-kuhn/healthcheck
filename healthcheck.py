@@ -5,6 +5,7 @@ import ipaddress
 import settings # type: ignore
 import datetime
 import json
+import parser
 
 #get environment variables
 NUMBER = settings.NUMBER
@@ -96,5 +97,27 @@ def send():
     })
     print('\n\nTextbelt info:\n' + str(res.json()))
 
+def change_domains(domains):
+    settings.DOMAIN = domains
+def change_number(number):
+    settings.NUMBER = number
+def change_api_key(api_key):
+    settings.API_KEY = api_key
+
+parser.add_argument("-n", "--number", nargs=1, metavar="NUMBER",
+                    help="change number in settings.py")
+parser.add_argument("-a", "--api_key", nargs=1, metavar="API_KEY",
+                    help="change api_key in settings.py")
+parser.add_argument("-d", "--domain", nargs=1, metavar="DOMAIN",
+                    help="change domains in settings.py")
+args = parser.parse_args()
+
 if __name__ == '__main__':
-    create_report()
+    if args.number:
+        change_number(args.number[0])
+    elif args.api_key:
+        change_api_key(args.api_key[0])
+    elif args.domain:
+        change_domains(args.domain[0])
+    else:
+        create_report()
